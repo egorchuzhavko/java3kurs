@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Candy>
+    <candy>
+        <name>kitKat</name>
+        <energy>44</energy>
+        <type>chocolate</type>
+        <ingredients>
+            <water>5</water>
+            <sugar>5</sugar>
+            <fruktoza>5</fruktoza>
+            <typechocolate>milk</typechocolate>
+            <vanilin>5</vanilin>
+        </ingredients>
+        <value>
+            <belki>5</belki>
+            <jiri>31</jiri>
+            <uglevodi>61</uglevodi>
+        </value>
+        <production>Nestle</production>
+    </candy>
+    <candy>
+        <name>Red shapka</name>
+        <energy>44</energy>
+        <type>chocolate</type>
+        <ingredients>
+            <water>6</water>
+            <sugar>6</sugar>
+            <fruktoza>6</fruktoza>
+            <typechocolate>milk</typechocolate>
+            <vanilin>6</vanilin>
+        </ingredients>
+        <value>
+            <belki>10</belki>
+            <jiri>35</jiri>
+            <uglevodi>50</uglevodi>
+        </value>
+        <production>communarka</production>
+    </candy>
+</Candy>

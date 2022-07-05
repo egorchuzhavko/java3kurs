@@ -1,0 +1,42 @@
+package Lab1;
+
+import java.util.Scanner;
+
+public class z3 {
+
+	public static void main(String[] args) 
+	{
+		Scanner inn = new Scanner(System.in);
+		int n=5;
+		int m=5;
+		int[][] arr = new int[10][10];
+		for (int i = 0; i < n; i++) 
+		{
+			for (int j=0;j<m;j++)
+			{
+				arr[i][j] = 0 + (int) (Math.random() * 25);
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.print("\n");
+		}
+		int k=0;
+		int sum=0;
+		System.out.print("\n");
+		for (int i = 0; i < n; i++) 
+		{
+			for (int j=0;j<m;j++)
+			{
+				if (i==j)
+				{
+					sum+=arr[i][j+1];
+					//System.out.print(arr[i][j]+" ");
+					k++;
+				}
+			}
+		}
+		System.out.print("\n");
+		System.out.print("Сумма элементов = "+sum+"\n");
+		System.out.print("Количество элементов = "+k);
+	}
+
+}

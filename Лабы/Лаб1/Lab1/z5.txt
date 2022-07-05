@@ -1,0 +1,15 @@
+package Lab1;
+
+public class z5 {
+
+	public static void main(String[] args) 
+	{
+		int z=79;
+		while(z<791)
+		{
+			System.out.print(z+"\n");
+			z++;
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees>
+    <Employee>
+        <age>29</age>
+        <name>Pankaj</name>
+        <gender>Male</gender>
+        <role>Java Developer</role>
+        <salary>250.0</salary>
+    </Employee>
+    <Employee>
+        <age>35</age>
+        <name>Lisa</name>
+        <gender>Female</gender>
+        <role>CEO</role>
+        <salary>210.1</salary>
+    </Employee>
+    <Employee>
+        <age>40</age>
+        <name>Tom</name>
+        <gender>Male</gender>
+        <role>Manager</role>
+        <salary>50.5</salary>
+    </Employee>
+    <Employee>
+        <age>25</age>
+        <name>Meghna</name>
+        <gender>Female</gender>
+        <role>Manager</role>
+        <salary>350.0</salary>
+    </Employee>
+</Employees>

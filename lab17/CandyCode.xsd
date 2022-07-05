@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Candy" type="CandyType"/>
+  <xs:complexType name="ingredientsType">
+    <xs:sequence>
+      <xs:element name="water">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="sugar">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fruktoza">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="typechocolate">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="chocolate"/>
+            <xs:enumeration value="milk"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="vanilin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="valueType">
+    <xs:sequence>
+      <xs:element name="belki">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="10"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="jiri">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="31"/>
+            <xs:enumeration value="35"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="uglevodi">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="61"/>
+            <xs:enumeration value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="candyType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="kitKat"/>
+            <xs:enumeration value="Red shapka"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="energy"/>
+      <xs:element type="xs:string" name="type"/>
+      <xs:element type="ingredientsType" name="ingredients"/>
+      <xs:element type="valueType" name="value"/>
+      <xs:element name="production">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Nestle"/>
+            <xs:enumeration value="communarka"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CandyType">
+    <xs:sequence>
+      <xs:element type="candyType" name="candy" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
